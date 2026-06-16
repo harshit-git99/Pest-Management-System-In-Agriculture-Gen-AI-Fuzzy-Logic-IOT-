@@ -65,3 +65,23 @@ docker build -t agropest-ai .
 docker run -p 8000:8000 --env-file .env agropest-ai
 ```
 
+## Deploy On Render / Railway / VPS
+
+Use:
+
+```bash
+gunicorn backend.app:app
+```
+
+Required environment variables:
+
+```text
+APP_SECRET=your-strong-secret
+DATABASE_URL=sqlite:///instance/agropest.db
+UPLOAD_FOLDER=frontend/uploads
+ADMIN_EMAIL=admin@yourdomain.com
+ADMIN_PASSWORD=ChangeThisStrongPassword
+```
+
+For real production, replace SQLite with PostgreSQL/MySQL and move uploads to S3/GCS.
+

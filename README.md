@@ -85,3 +85,17 @@ ADMIN_PASSWORD=ChangeThisStrongPassword
 
 For real production, replace SQLite with PostgreSQL/MySQL and move uploads to S3/GCS.
 
+## How To Add A Real CNN Pest Model
+
+1. Train a TensorFlow/Keras pest classifier on your crop/pest dataset.
+2. Export it as:
+
+```text
+backend/models/pest_model.keras
+```
+
+3. Update `CLASS_NAMES` in `backend/model_adapter.py`.
+4. Replace the placeholder block in `predict_pest()` with TensorFlow loading and 224x224 preprocessing.
+
+The current adapter is a deterministic demo inference engine so the application is fully usable without a heavy ML model.
+

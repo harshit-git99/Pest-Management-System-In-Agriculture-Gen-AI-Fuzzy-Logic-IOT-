@@ -99,3 +99,15 @@ backend/models/pest_model.keras
 
 The current adapter is a deterministic demo inference engine so the application is fully usable without a heavy ML model.
 
+## API Summary
+
+- `POST /api/register`
+- `POST /api/login`
+- `POST /api/detect`
+- `POST /api/manual-entry`
+- `GET /api/detections`
+- `POST /api/feedback`
+- `POST /api/sensor-log`
+- `GET /api/admin/stats`
+- `GET /api/admin/users`
+

@@ -111,3 +111,27 @@ The current adapter is a deterministic demo inference engine so the application 
 - `GET /api/admin/stats`
 - `GET /api/admin/users`
 
+## Folder Structure
+
+```text
+agropest_ai/
+  backend/
+    app.py
+    fuzzy_engine.py
+    model_adapter.py
+  frontend/
+    index.html
+    login.html
+    register.html
+    dashboard.html
+    assets/
+    uploads/
+  instance/
+  scripts/
+    seed.py
+  requirements.txt
+  Dockerfile
+  Procfile
+  README.md
+```
+

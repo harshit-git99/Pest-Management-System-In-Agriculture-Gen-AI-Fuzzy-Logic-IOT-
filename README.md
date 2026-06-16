@@ -135,3 +135,10 @@ agropest_ai/
   README.md
 ```
 
+## Important Production Notes
+
+- Change `APP_SECRET` and admin password before deployment.
+- Add HTTPS on production hosting.
+- Add role-based audit logs for government/enterprise deployments.
+- Use verified local agricultural pesticide recommendations before commercial field use.
+- A trained and validated pest dataset is required before claiming real diagnostic accuracy.
